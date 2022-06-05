@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_76_getx_navigation/routes/route_name.dart';
 import 'package:get/get.dart';
 
 class PageLima extends StatelessWidget {
@@ -16,7 +17,7 @@ class PageLima extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Get.back();
+                  Get.offAllNamed(RouteName.page_satu);
                 },
                 child: Text('<<< Back Page'))
           ],

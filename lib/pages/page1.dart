@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_76_getx_navigation/pages/page2.dart';
+import 'package:flutter_76_getx_navigation/routes/route_name.dart';
 import 'package:get/get.dart';
 
 class PageSatu extends StatelessWidget {
@@ -17,7 +18,7 @@ class PageSatu extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Get.toNamed('/page-dua');
+                  Get.toNamed(RouteName.page_dua);
                 },
                 child: Text('Next Page >>>'))
           ],
