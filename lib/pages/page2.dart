@@ -20,7 +20,9 @@ class PageDua extends StatelessWidget {
               children: [
                 ElevatedButton(
                     onPressed: () {
-                      Get.back();
+                      Get.back(
+                          result:
+                              'ini dari page dua'); // berkaitan dengan data await page satu
                     },
                     child: Text('<<< Back Page')),
                 ElevatedButton(
