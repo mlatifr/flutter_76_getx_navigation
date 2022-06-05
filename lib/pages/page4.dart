@@ -17,7 +17,7 @@ class PageEmpat extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  navigator.pop();
+                  Get.back();
                 },
                 child: Text('<<< Back Page')),
             ElevatedButton(
