@@ -17,7 +17,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       home: PageSatu(),
+      initialRoute: '/page-satu',
       getPages: [
+        GetPage(name: '/page-satu', page: () => PageSatu()),
         GetPage(name: '/page-dua', page: () => PageDua()),
         GetPage(name: '/page-tiga', page: () => PageTiga()),
         GetPage(name: '/page-empat', page: () => PageEmpat()),
