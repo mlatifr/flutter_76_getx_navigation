@@ -22,9 +22,7 @@ class PageEmpat extends StatelessWidget {
                 child: Text('<<< Back Page')),
             ElevatedButton(
                 onPressed: () {
-                  navigator.push(MaterialPageRoute(
-                    builder: (context) => PageLima(),
-                  ));
+                  Get.to(PageLima());
                 },
                 child: Text('Next Page >>>')),
           ],
