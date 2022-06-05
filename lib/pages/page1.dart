@@ -16,10 +16,8 @@ class PageSatu extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-                onPressed: () async {
-                  var data = await Get.to(() => PageDua());
-                  print(
-                      'hasil page satu: $data'); //menunggu hasil kembalian dari Page Dua
+                onPressed: () {
+                  Get.toNamed('/page-dua');
                 },
                 child: Text('Next Page >>>'))
           ],

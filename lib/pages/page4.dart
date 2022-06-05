@@ -22,7 +22,7 @@ class PageEmpat extends StatelessWidget {
                 child: Text('<<< Back Page')),
             ElevatedButton(
                 onPressed: () {
-                  Get.to(() => PageLima());
+                  Get.toNamed('/page-lima');
                 },
                 child: Text('Next Page >>>')),
           ],
