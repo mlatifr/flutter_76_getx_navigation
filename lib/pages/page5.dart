@@ -10,10 +10,14 @@ class PageLima extends StatelessWidget {
         title: Text('Page Lima'),
       ),
       body: Center(
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(onPressed: () {}, child: Text('<<< Back Page'))
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text('<<< Back Page'))
           ],
         ),
       ),

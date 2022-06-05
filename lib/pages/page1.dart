@@ -11,7 +11,7 @@ class PageSatu extends StatelessWidget {
         title: Text('Page Satu'),
       ),
       body: Center(
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
