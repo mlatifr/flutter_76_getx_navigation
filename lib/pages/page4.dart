@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_76_getx_navigation/pages/page5.dart';
+import 'package:get/get.dart';
 
 class PageEmpat extends StatelessWidget {
   const PageEmpat({Key key}) : super(key: key);
@@ -16,12 +17,12 @@ class PageEmpat extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  navigator.pop();
                 },
                 child: Text('<<< Back Page')),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
+                  navigator.push(MaterialPageRoute(
                     builder: (context) => PageLima(),
                   ));
                 },

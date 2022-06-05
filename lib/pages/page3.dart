@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_76_getx_navigation/pages/page4.dart';
+import 'package:get/get.dart';
 
 class PageTiga extends StatelessWidget {
   const PageTiga({Key key}) : super(key: key);
@@ -16,12 +17,12 @@ class PageTiga extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  navigator.pop();
                 },
                 child: Text('<<< Back Page')),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
+                  navigator.push(MaterialPageRoute(
                     builder: (context) => PageEmpat(),
                   ));
                 },

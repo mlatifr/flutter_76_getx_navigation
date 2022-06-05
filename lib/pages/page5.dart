@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PageLima extends StatelessWidget {
   const PageLima({Key key}) : super(key: key);
@@ -15,7 +16,7 @@ class PageLima extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  navigator.pop();
                 },
                 child: Text('<<< Back Page'))
           ],

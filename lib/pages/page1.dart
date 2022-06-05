@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_76_getx_navigation/pages/page2.dart';
+import 'package:get/get.dart';
 
 class PageSatu extends StatelessWidget {
   const PageSatu({Key key}) : super(key: key);
@@ -16,8 +17,8 @@ class PageSatu extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => PageDua(),
+                  navigator.push(MaterialPageRoute(
+                    builder: (_) => PageDua(),
                   ));
                 },
                 child: Text('Next Page >>>'))
