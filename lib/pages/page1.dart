@@ -17,7 +17,7 @@ class PageSatu extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Get.to(PageDua());
+                  Get.to(() => PageDua());
                 },
                 child: Text('Next Page >>>'))
           ],

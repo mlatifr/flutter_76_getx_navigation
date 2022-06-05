@@ -22,7 +22,7 @@ class PageDua extends StatelessWidget {
                 child: Text('<<< Back Page')),
             ElevatedButton(
                 onPressed: () {
-                  Get.to(PageTiga());
+                  Get.to(() => PageTiga());
                 },
                 child: Text('Next Page >>>')),
           ],
