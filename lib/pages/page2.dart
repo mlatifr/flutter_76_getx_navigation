@@ -12,19 +12,24 @@ class PageDua extends StatelessWidget {
         title: Text('Page Dua'),
       ),
       body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Column(
           children: [
-            ElevatedButton(
-                onPressed: () {
-                  Get.back();
-                },
-                child: Text('<<< Back Page')),
-            ElevatedButton(
-                onPressed: () {
-                  Get.to(() => PageTiga());
-                },
-                child: Text('Next Page >>>')),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                    onPressed: () {
+                      Get.back();
+                    },
+                    child: Text('<<< Back Page')),
+                ElevatedButton(
+                    onPressed: () {
+                      Get.to(() => PageTiga());
+                    },
+                    child: Text('Next Page >>>')),
+              ],
+            ),
+            Text(Get.arguments.toString())
           ],
         ),
       ),
